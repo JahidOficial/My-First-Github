@@ -36,10 +36,50 @@
             border: 1px solid black;
             padding: 8px;
         }
+        .card-section{
+            max-width: 1100px;
+            height: auto;
+            margin: auto;
+            text-align: center;
+        }
+        .card-section h1{
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .card-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 280px;
+            height: auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+        }
+        .card img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+            object-fit: cover;
+        }
+        .card h2{
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        .card p{
+
+        }
     </style>
 </head>
 <body>
 
+    <h1>Practice Task 1</h1>
     <div class="top-section">
         <form>
             <label for="search">Search your Image here: </label>
@@ -63,6 +103,7 @@
             <label for="feedback">Comment: </label><br>
             <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Your Feedback"></textarea><br><br>
 
+            <h1>Practice Task 2</h1>
             <label for="experience">Experience:</label>
             <select id="experience">
                 <option value="Good">Good</option>
@@ -74,6 +115,8 @@
         </form>
     </div>
 
+
+    <h1>Practice Task 3</h1>
     <table>
         <thead>
             <tr>
@@ -128,6 +171,70 @@
             </tr>
         </tbody>
     </table>
+
+
+
+    <h1>Practice Task 4</h1><br>
+
+    <section class="card-section">
+        <h1>Meet Our Team</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="image/img-1.jpeg" alt="Team Member 1">
+                <h2>John Doe</h2>
+                <h3>Position: CEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque vitae veritatis officia nihil corrupti modi magni molestias eius commodi.</p>
+            </div>
+            <div class="card">
+                <img src="image/img-2.jfif" alt="Team Member 1">
+                <h2>John Doe</h2>
+                <h3>Position: CEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque vitae veritatis officia nihil corrupti modi magni molestias eius commodi.</p>
+            </div>
+            <div class="card">
+                <img src="image/img-3.jpg" alt="Team Member 1">
+                <h2>John Doe</h2>
+                <h3>Position: CEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque vitae veritatis officia nihil corrupti modi magni molestias eius commodi.</p>
+            </div>
+            <div class="card">
+                <img src="image/img-4.jpg" alt="Team Member 1">
+                <h2>John Doe</h2>
+                <h3>Position: CEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque vitae veritatis officia nihil corrupti modi magni molestias eius commodi.</p>
+            </div>
+            <div class="card">
+                <img src="image/img-5.jpg" alt="Team Member 1">
+                <h2>John Doe</h2>
+                <h3>Position: CEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque vitae veritatis officia nihil corrupti modi magni molestias eius commodi.</p>
+            </div>
+            <div class="card">
+                <img src="image/img-6.jpg" alt="Team Member 1">
+                <h2>John Doe</h2>
+                <h3>Position: CEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque vitae veritatis officia nihil corrupti modi magni molestias eius commodi.</p>
+            </div>
+            <div class="card">
+                <img src="image/img-7.jpeg" alt="Team Member 1">
+                <h2>John Doe</h2>
+                <h3>Position: CEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque vitae veritatis officia nihil corrupti modi magni molestias eius commodi.</p>
+            </div>
+            <div class="card">
+                <img src="image/img-8.jpeg" alt="Team Member 1">
+                <h2>John Doe</h2>
+                <h3>Position: CEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque vitae veritatis officia nihil corrupti modi magni molestias eius commodi.</p>
+            </div>
+            <div class="card">
+                <img src="image/img-9.jfif" alt="Team Member 1">
+                <h2>John Doe</h2>
+                <h3>Position: CEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque vitae veritatis officia nihil corrupti modi magni molestias eius commodi.</p>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
