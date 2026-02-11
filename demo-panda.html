@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Panda</title>
+
+    <!-- style css -->
+    <style>
+        *{
+            font-size: 18px;
+        }
+        body {
+            background-color: rgb(237, 240, 241);
+            font-size: 16px;
+        }
+        img{
+            width: 400px;
+            margin-top: 20px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .top-section {
+            border-top: 3px solid rgb(182, 182, 182);
+            border-bottom: 3px solid rgb(198, 198, 198);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <form>
+            <label for="search">Search your Image here: </label>
+            <input type="search" id="search" name="search" placeholder="Type here...">
+            <input type="submit" value="Search">
+        </form>
+
+        <img src="panda.jpg" alt="Panda Image">
+        <a href="#">For more click here</a>
+    </div>
+
+    <div class="bottom-section">
+        <h3>Feedback Form:</h3>
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
+
+            <label for="date">Date: </label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="feedback">Comment: </label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Your Feedback"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+    </div>
+
+</body>
+</html>
