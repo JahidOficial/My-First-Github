@@ -23,7 +23,7 @@ header{
     background: #fff8f3;
     background-image: url("Image/developer.png"), url("Image/header_bg.png");
     background-repeat: no-repeat;
-    background-position: left center, right bottom;
+    background-position: 24px 38px, right bottom;
 }
 nav{
     display: flex;
@@ -83,10 +83,14 @@ nav ul li a{
     font-size: 25px;
     color: #000;
 }
+.banner-content .btn{
+    font-size: 15px;
+}
 .banner-content .btn:last-child{
     background-color: transparent;
-    color: #000;
+    color: #FD6E0A;
     border: 2px solid #FD6E0A;
+    font-size: 15px;
 }
 .banner-image img{
     width: 100%;
