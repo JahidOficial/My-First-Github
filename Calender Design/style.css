@@ -44,6 +44,7 @@ body{
 .day{
     background-color: rgb(244, 175, 175) !important;
     font-weight: bold;
+    cursor: not-allowed;
 }
 .date:hover{
     background-color: rgb(223, 54, 214);
