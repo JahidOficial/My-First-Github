@@ -1,0 +1,636 @@
+/* google font - work sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;                   
+}
+body{
+    font-optical-sizing: auto;
+}
+:root{
+    --primary-color: #FF900E;
+    --secondary-color: #fff;
+    --dark-01: #131313;
+    --dark-02: #424242;
+    --dark-03: #727272;
+    --dark-04: #727272;
+}
+p{
+    font-size: 16px;
+    color: var(--dark-03);
+}
+
+/* Shared css */
+.container{
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+
+/* ===========
+header section
+============ */
+header{
+    background:rgb(255, 244, 231);
+    padding-top: 50px;
+}
+header .nav{
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    gap: 30px;
+}
+nav ul li a{
+    font-size: 18px;
+    color: var(--dark-02);
+    transition: all 0.5s ease;
+}
+nav ul li a:hover{
+    color: var(--primary-color);
+}
+header .logo{
+    font-size: 45px;
+    font-weight: bold;
+}
+.header-content{
+    padding: 100px 0 45px 0;
+}
+.header-text-content{
+    text-align: center;
+    max-width: 860px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.header-text-content h2{
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--dark-01);
+}
+.header-text-content p{
+    margin: 32px 0;
+}
+.header-content img{
+    width: 100%;
+}
+
+
+
+
+/* =============
+Features section
+============== */
+.features-section{
+    padding: 85px 0 130px;
+}
+.features-section .container{
+    padding: 0 60px;
+}
+.features-section .features-image{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.features-image img{
+    width: 100%;
+}
+.features-section .features-content{
+    width: 50%;
+    padding-left: 73px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+.features-content h2,
+.someFact-content-heading h2{
+    font-size: 45px;
+}
+.features-content h2 .f-1{
+    color: var(--dark-03);
+    font-weight: 500;
+}
+.features-content h2 .f-2{
+    color: var(--dark-01);
+    font-weight: 600;
+}
+.features-content h2 .f-3{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+
+
+/* ===============
+Experience section
+=============== */
+.experience-content{
+    width: 50%;
+    padding-right: 30px;
+}
+.experience-content-heading h2{
+    font-size: 45px;
+    color: var(--dark-01);
+    border-left: 5px solid var(--primary-color);
+    padding-left: 21px;
+}
+.experience-content-heading p{
+    margin: 24px 0 30px 0;
+}
+
+.experience-content .card-box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+}
+.experience-content .card-box .card{
+    box-shadow: 0 0 7px 0 #0000001f;
+    padding: 30px;
+    border-radius: 8px;
+}
+.experience-content .card-box .card h3{
+    font-size: 20px;
+    color: var(--dark-02);
+    margin-bottom: 10px;
+}
+
+.experience-image img{
+    width: 100%;
+    padding-left: 146px;
+}
+.experience-image div.ex-button{
+    background: var(--primary-color);
+    width: 250px;
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 40px 0px;
+    margin-top: -55px;
+    border-radius: 5px;
+    line-height: 29px;
+    margin-left: 40px;
+    position: relative;
+}
+
+
+
+
+/* ==============
+Some fact section
+============== */
+.some-facts-section .container{
+    padding: 100px 0;
+}
+.someFact-content-heading p{
+    width: 500px;
+    padding: 24px 0 100px 0;
+}
+.some-facts-section .content-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 124px;
+    text-align: center;
+}
+.some-facts-section .content-box .card{
+    border: 1px solid var(--primary-color);
+    padding: 45px 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.some-facts-section .content-box .card img{
+    width: 50px;
+}
+.some-facts-section .content-box .card h2{
+    font-size: 35px;
+}
+.some-facts-section .content-box .card span{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+/*=============
+sponsors section
+============= */
+.sponsors-section .container{
+    text-align: center;
+}
+.sponsors-heading{
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.sponsors-heading h2{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 24px;
+}
+.sponsors-image{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sponsors-image img{
+    filter: grayscale(100%);
+}
+
+
+
+
+/* =========
+Footer section
+========= */
+footer .copyright-section{
+    padding: 130px 0;
+}
+.copyright-section .container div{
+    background-color: #FFF4E7;
+    color: var(--dark-02);
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 45px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* responsive design */
+/* small devices */
+@media screen and (max-width: 576px) {
+    /* header section */
+    header .nav{
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header .logo{
+        font-size:35px;
+    }
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-text-content h2{
+        font-size: 30px;
+    }
+    .header-text-content p{
+        padding: 0 20px;
+    }
+
+    /* features section */
+    .features-section .container{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .features-section .features-image{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .features-content{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-bottom: 20px;
+        width: 100% !important;
+    }
+    .features-content h2{
+        font-size: 30px;
+    }
+
+
+    /* Experience section */
+    .experience-section .container{
+        flex-direction: column;
+    }
+    .experience-content{
+        width: 100%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+    .experience-content-heading h2{
+        font-size: 30px;
+    }
+    .experience-image{
+        padding: 0 15px;
+    }
+    .experience-image img{
+        padding-left: 85px;
+    }
+    .experience-image .ex-button{
+        width: 170px !important;
+        padding: 20px 0 !important;
+        margin-left: 0 !important;
+    }
+    .ex-button h1{
+        font-size: 30px;
+    }
+
+
+    /* some fact section */
+    .some-facts-section .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .someFact-content-heading h2 {
+        font-size: 30px;
+    }
+    .someFact-content-heading p{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .some-facts-section .content-box{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    /* sponsors section */
+    .sponsors-section .container{
+        padding: 0 30px;
+    }
+    .sponsors-heading{
+        width: 100%;
+    }
+    .sponsors-heading h2{
+        font-size: 30px;
+    }
+    .sponsors-image{
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* footer section */
+    .copyright-section .container{
+        padding: 0 30px;
+    }
+    .copyright-section .container div{
+        padding: 45px 10px;
+    }
+}
+
+
+/* medium devices media query*/
+@media screen and (min-width: 576px) and (max-width: 768px){
+    /* header section */
+    header .nav{
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header .logo{
+        font-size:38px;
+    }
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-text-content h2{
+        font-size: 35px;
+    }
+    .header-text-content p{
+        padding: 0 20px;
+    }
+
+    /* features section */
+    .features-section .container{
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+    .features-section .features-image{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .features-content{
+        padding: 0 !important;
+        width: 100% !important;
+        padding-bottom: 20px !important;
+    }
+    .features-content h2{
+        font-size: 35px;
+    }
+
+
+    /* Experience section */
+    .experience-section .container{
+        flex-direction: column;
+    }
+    .experience-content{
+        width: 100%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+    .experience-content-heading h2{
+        font-size: 35px;
+    }
+    .experience-image{
+        padding: 0 15px;
+    }
+    .experience-image img{
+        padding-left: 85px;
+    }
+    .experience-image .ex-button{
+        width: 200px !important;
+        padding: 25px 0 !important;
+        margin-left: 0 !important;
+    }
+    .ex-button h1{
+        font-size: 30px;
+    }
+
+    /* some fact section */
+    .some-facts-section .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .someFact-content-heading h2 {
+        font-size: 35px;
+    }
+    .someFact-content-heading p{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .some-facts-section .content-box{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+
+    /* sponsors section */
+    .sponsors-section .container{
+        padding: 0 30px;
+    }
+    .sponsors-heading{
+        width: 100%;
+    }
+    .sponsors-heading h2{
+        font-size: 35px;
+    }
+    .sponsors-image{
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* footer section */
+    .copyright-section .container{
+        padding: 0 30px;
+    }
+    .copyright-section .container div{
+        padding: 45px 10px;
+    }
+}
+
+
+
+/* large devices */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /* header section */
+    header .nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .header-text-content p{
+        padding: 0 40px;
+    }
+    /* features section */
+    .features-section .container{
+        padding: 0 30px;
+    }
+    .features-content{
+        padding-left: 50px !important;
+    }
+    .features-content h2{
+        font-size: 38px;
+    }
+
+
+    /* Experience section */
+    .experience-section .container{
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    .experience-content{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .experience-content .card-box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .experience-image .ex-button{
+        margin-left: 0 !important;
+    }
+
+
+    /* some fact section */
+    .some-facts-section .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .some-facts-section .content-box{
+        gap: 24px;
+    }
+
+
+    /* sponsors section */
+    .sponsors-section .container{
+        padding: 0 30px;
+    }
+    .sponsors-image{
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+    /* footer section */
+    .copyright-section .container{
+        padding: 0 30px;
+    }
+    .copyright-section .container div{
+        padding: 45px 20px;
+    }
+}
+
+
+/* Extra large devices */
+@media screen and (min-width: 992px) and (max-width: 1320px){
+    /* header section */
+    header .nav{
+        padding: 0 30px;
+    }
+
+    /* experience section */
+    .experience-section .container{
+        padding: 0 30px;
+    }
+    .experience-image{
+        width: 50%;
+    }
+    .experience-image img{
+        padding-left: 20px;
+    }
+    .experience-image div.ex-button{
+        margin-left: -10px;
+        margin-top: -70px;
+    }
+
+
+    /* some fact section */
+    .some-facts-section .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .some-facts-section .content-box{
+        gap: 24px;
+    }
+
+    /* sponsors section */
+    .sponsors-section .container{
+        padding: 0 30px;
+    }
+
+    /* footer section */
+    .copyright-section .container{
+        padding: 0 30px;
+    }
+}
