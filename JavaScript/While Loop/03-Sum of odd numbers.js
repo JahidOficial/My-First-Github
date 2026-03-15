@@ -1,0 +1,37 @@
+/***
+Subtask-1:
+Display sum of all the odd numbers from 81 to 131.
+*/
+
+/***
+Subtask-2:
+Display sum of all the even numbers from 206 to 311.
+*/
+
+
+
+
+// Subtask-1
+console.log("Sum of all the odd numbers from 81 to 131:");
+let num1 = 81, sum1 = 0;
+
+while(num1 <= 131){
+    if(num1 % 2 !== 0){
+        sum1 += num1;
+    }
+    num1++;
+}
+console.log(sum1);
+
+
+// Subtask-2
+console.log("Sum of all the even numbers from 206 to 311:");
+let num2 = 206, sum2 = 0;
+
+while(num2 <= 311){
+    if(num2 % 2 == 0){
+        sum2 += num2;
+    }
+    num2++;
+}
+console.log(sum2);
