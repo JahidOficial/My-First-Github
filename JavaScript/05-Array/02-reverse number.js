@@ -4,5 +4,3 @@ const numbers = [1, 6, 3, 3, 5, 12, 34, 56, 23];
 numbers.reverse();
 console.log(numbers);
 
-
-
